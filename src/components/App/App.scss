@@ -1,0 +1,117 @@
+@import '../../scss/assets/variables';
+@import '../../scss/assets/mixins';
+@import '../../scss/assets/fonts';
+
+// Set base font
+body {
+  min-height: 100vh;
+  font-family: $montserrat;
+  font-size: $mob-base-font+px;
+  color: $main-clr;
+  line-height: 1.5;
+
+  @include media(min, $md) {
+    font-size: $tab-base-font+px;
+  }
+
+  @include media(min, $lg) {
+    font-size: $desc-base-font+px;
+  }
+}
+
+.main {
+  padding: 50px 0;
+  min-height: calc(100vh - 207px);
+}
+
+a {
+  color: $main-clr;
+  text-decoration: none;
+  transition: .2s ease;
+
+  &:hover {
+    color: $link-hover-clr;
+  }
+}
+
+// Table
+.table-wrapper {
+  margin: 50px 0;
+  overflow-x: auto;
+
+  table {
+    margin: 0;
+  }
+}
+
+table {
+  margin: 50px auto;
+  min-width: 700px;
+  border-collapse: collapse;
+  border: 1px solid;
+  box-shadow: 0 0 4px 0 #a5a5a5;
+
+  thead {
+    background: #8884cc;
+  }
+
+  tbody {
+    background: #ccc7ef;
+
+    tr {
+      &:nth-child(even) {
+        background: #a8a2d0;
+      }
+    }
+  }
+
+  td,
+  th {
+    padding: 20px;
+    border: 1px solid;
+  }
+}
+
+// Form style
+.form {
+  margin: 30px 0;
+}
+
+legend {
+  padding: 0 10px;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+// Video, google map, iframe
+.video-wrapper,
+.iframe-wrapper,
+.responsive-wrapper {
+  position: relative;
+  padding-top: 50%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+// Custom general layout style for all pages in project
+.container {
+  max-width: 1600px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

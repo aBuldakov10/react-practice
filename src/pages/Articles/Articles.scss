@@ -1,0 +1,54 @@
+@import "../../scss/assets/mixins";
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+
+  &__item {
+    flex: 0 1 calc(25% - 23px);
+    margin-bottom: 0;
+  }
+}
+
+.post-preview {
+  height: 450px;
+
+  @include media(min, $lg) {
+    cursor: pointer;
+    transition: .2s ease;
+
+    &:hover {
+      box-shadow: $shadow;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 26.5% 0;
+
+    & img {
+      @include centering(xy);
+      max-height: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    height: 54px;
+    overflow: hidden;
+  }
+
+  &__description {
+    margin-bottom: 5px;
+    height: 110px;
+    overflow: hidden;
+  }
+}
+
+.reset-posts-filter {
+  display: inline-block;
+  margin-bottom: 20px;
+}

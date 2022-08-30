@@ -1,1 +1,1 @@
-# default react-template
+# React features

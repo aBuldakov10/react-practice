@@ -1,6 +1,6 @@
 const { resolve, join } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -9,7 +9,7 @@ module.exports = {
     path: resolve(__dirname, 'build'),
     filename: 'js/[name]-[fullhash].js',
     clean: true,
-    // publicPath: '/', // Use this absolute path for deploy on your own host
+    publicPath: '/', // Use this absolute path for deploy on your own host
   },
   module: {
     rules: [
@@ -45,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React template',
+      title: 'React practice',
       template: './public/index.html',
       inject: 'body',
       favicon: './public/images/favicon.ico',
@@ -57,7 +57,7 @@ module.exports = {
   ],
   devServer: {
     hot: true,
-    port: 3000,
+    port: 3001,
     static: {
       directory: join(__dirname, 'src'),
     },

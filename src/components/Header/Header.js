@@ -1,0 +1,21 @@
+import React from 'react';
+
+import './header.scss';
+import Logo from '../Logo/Logo';
+import Navigation from '../Navigation/Navigation';
+import { headerNav } from '../../constants/constants';
+
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="header-inner">
+          <Logo />
+          <Navigation nav={headerNav} />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
