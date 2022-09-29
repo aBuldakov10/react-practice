@@ -1,5 +1,6 @@
 export const headerNav = {
   Home: '/',
+  Stars: '/stars',
   Projects: '/projects',
   Products: '/products',
   Articles: '/articles',

@@ -53,7 +53,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name]-[fullhash].css',
     }),
-    // convert fonts to woff
   ],
   devServer: {
     hot: true,

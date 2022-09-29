@@ -11,6 +11,7 @@ import Articles from '../../pages/Articles/Articles';
 import Article from '../../pages/Article/Article';
 import Authors from '../../pages/Authors/Authors';
 import Author from '../../pages/Author/Author';
+import Stars from '../../pages/Stars/Stars';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/stars" element={<Stars />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/article/:id" element={<Article />} />
             <Route path="/authors" element={<Authors />} />

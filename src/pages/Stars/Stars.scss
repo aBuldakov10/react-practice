@@ -1,0 +1,38 @@
+.star-wrap {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.counter-wrap {
+  flex: 1 1 20%;
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  span {
+    margin: 0 20px;
+  }
+}
+
+.star-people-wrap,
+.star-planets-wrap {
+  flex: 1 1 40%;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-right: 15px;
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './header.scss';
+import './Header.scss';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import { headerNav } from '../../constants/constants';
